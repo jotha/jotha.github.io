@@ -1,0 +1,829 @@
+/**
+ * @file: skrollr.css;
+ */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,900');
+
+html, body {
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	overflow-x:hidden;
+	font-size: 10px;
+}
+
+@media (max-width: 1199px) {
+	html, body {
+		height: 100% !important;
+	}
+
+	body {
+		overflow: scroll !important;
+		overflow-x: hidden !important;
+	}
+}
+
+#skrollr-body {
+	display: none;
+}
+
+#no-valid-device {
+	padding: 15px;
+	background: #3498db;
+	color: #FFF;
+}
+
+#no-valid-device h1 {
+	font-size: 10rem;
+	line-height: 10rem;
+}
+
+#no-valid-device p {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 30px;
+}
+
+#no-valid-device hr {
+	margin-bottom: 30px;
+}
+
+@media (min-width: 1200px) {
+	#skrollr-body {
+		display: block;
+	}
+
+	#no-valid-device {
+		display: none;
+	}
+}
+
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	font-size: 12rem;
+	line-height: 12rem;
+	margin: 30px 0;
+}
+
+h4 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	font-size: 5rem;
+	line-height: 5rem;
+	margin: 15px 0;	
+}
+
+#end h1 {
+	color: #000;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 3rem;
+	line-height: 3rem;
+	margin: 10px 0;
+	max-width: 70%;
+}
+
+p span {
+	font-weight: 900;
+	display: inline-block;
+}
+
+.why-container p span {
+	display: inline;
+}
+
+p a {
+	color: midnightblue;
+	text-decoration: none;
+}
+
+p.small {
+	font-size: 24px;
+}
+
+.margin-t-30 {
+	margin-top: 30px;
+}
+
+.margin-t-50 {
+	margin-top: 50px;
+}
+
+.scene {
+	width: 100%;
+	height: 100%;
+}
+
+#scene1 {
+	background: #3498DB;
+	color: #FFF;
+}
+
+.icons-wrapper {
+  position: absolute;
+  width: 100%;
+  top: 100px;
+  height: 300px;
+}
+
+.icons-wrapper-inner {
+  width: 90%;
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+  height: 300px;
+}
+
+.paper-a {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+	width: 180px;
+  height: 240px;
+  background: #FFF;
+  padding: 10px;
+  box-sizing: border-box;
+  transform: rotate(-18deg);
+}
+
+.paper-a .pag {
+  background: #D9E0E4;
+  height: 14px;
+  margin-bottom: 10px;
+}
+
+.paper-a .graph-column {
+  overflow: hidden;
+  position: relative;
+}
+
+.paper-a .graph-column .bar {
+  width: 10px;
+  height: 38px;
+  background: #D9E0E4;
+  margin-right: 8px;
+  float: left;
+  position: relative;
+}
+
+.paper-a .graph-column .bar2 .bar-inner {
+	height: 18px;
+}
+
+.paper-a .graph-column .bar3 .bar-inner {
+	height: 30px;
+}
+
+.paper-a .graph-column .bar4 .bar-inner {
+	height: 12px;
+}
+
+.paper-a .graph-column .bar-inner {
+	position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: darkseagreen;
+  height: 22px;
+}
+
+.paper-a .graph-column .pag {
+  float: right;
+  width: 86px;
+}
+
+.paper-a .pag-column {
+	width: 100%;
+	overflow: hidden;
+}
+
+.paper-a .pag-column .image {
+  float: right;
+  width: 30%;
+  height: 38px;
+  background: indianred;
+}
+
+.paper-a .pag-column .pag {
+  float: left;
+  width: 65%;
+}
+
+.paper-a .header {
+	background: cornflowerblue;
+	height: 30px;
+	margin-bottom: 10px;
+}
+
+.smartphone {
+  width: 70px;
+  height: 140px;
+  background: #1c1c1c;
+  border-radius: 8px;
+  position: absolute;
+  box-shadow: 1px 1px darkgrey;
+  right: 46%;
+  transform: rotate(-16deg);
+  top: 10%;
+}
+
+.smartphone .screen {
+  width: 82%;
+  margin: auto;
+  background: #FFF;
+  height: 88%;
+  margin-top: 7%;
+}
+
+.smartphone .screen .user {
+  background: url(../img/user_green-512.png);
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+  top: 12px;
+  position: relative;
+}
+
+.smartphone .screen .name,
+.smartphone .screen .pass {
+  width: 50px;
+  height: 15px;
+  background: #ccd1d9;
+  margin: auto;
+  position: relative;
+  top: 16px;
+  line-height: 18px;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.smartphone .screen .pass {
+	margin-top: 4px;
+}
+
+.smartphone .screen .cta {
+  background: indianred;
+  height: 16px;
+  position: relative;
+  top: 20px;
+  width: 50px;
+  margin: auto;
+}
+
+.computer {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  top: 93px;
+  right: 0;
+  transform: rotate(36deg);
+}
+
+.computer .monitor {
+  width: 100%;
+  height: 30px;
+  background: #ccd1d9;
+  border-radius: 15px;
+  margin-bottom: 0px;
+  box-shadow: 2px 2px #fff;
+  z-index: 0;
+}
+
+.computer .keyboard {
+  background: lightgray;
+  border-radius: 30px;
+  height: 250px;
+  max-width: 90%;
+  margin: auto;
+  position: relative;
+  box-shadow: 2px 2px #fff;
+  z-index: 0;
+}
+
+.computer .keyboard .freeze {
+	width: 100px;
+  margin: auto;
+  background: #99C6E3;
+}
+
+.computer .keyboard .touchpad-wrapper {
+	width: 100%;
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+}
+
+.computer .keyboard .touchpad {
+  background: #F5F7FA;
+  width: 100px;
+  height: 50px;
+  border: 2px solid #D7DCE2;
+  margin: auto;
+}
+
+.computer .keyboard .key-wrapper {
+	padding: 20px 15px;
+}
+
+.computer .keyboard .key {
+  width: 30px;
+  height: 30px;
+  background: #1c1c1c;
+  float: left;
+  margin: 8px;
+  box-shadow: 2px 2px #000;
+}
+
+.computer .keyboard .key.double-key {
+	width: 76px;
+}
+
+.computer .keyboard .key.triple-key {
+	width: 122px;
+}
+
+#scene2 {
+	background: blue;
+}
+
+#skrollr-body {
+	height: 100%;
+}
+
+.flex-container {
+  width: 100%;
+	height: 100vh;
+  display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex-container-inner {
+ 	width: 90%;
+ 	max-width: 1200px;
+}
+
+@media (min-width: 1600px) {
+
+	#end .flex-container-inner {
+ 		max-width: 800px;
+	}
+}
+
+.skrollable {
+	/*
+	 * First-level skrollables are positioned relative to window
+	 */
+	position:fixed;
+
+	/*
+	 * Skrollables by default have a z-index of 100 in order to make it easy to position elements in front/back without changing each skrollable
+	 */
+	z-index:100;
+}
+
+.skrollr-mobile .skrollable {
+	/*
+		May cause issues on Android default browser (see #331 on GitHub).
+	*/
+	position:absolute;
+}
+
+.skrollable .skrollable {
+	/*
+	 * Second-level skrollables are positioned relative their parent skrollable
+	 */
+	position:absolute;
+}
+
+.skrollable .skrollable .skrollable {
+	/*
+	 * Third-level (and below) skrollables are positioned static
+	 */
+	position:static;
+}
+
+.about-container {
+	height: 600px;
+	width: 100%;
+	position: relative;
+}
+
+.about {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+  width: 300px;
+  height: 300px;
+  position: absolute !important;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 5px solid #FFF;
+}
+
+.about .about-img {
+	background-size: contain;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: relative;
+	z-index: 1;
+	background-repeat: no-repeat;
+}
+
+.about .about-txt {
+  position: absolute !important;
+  top: 0px;
+  height: 100%;
+  left: 165px;
+  background: #FFF;
+  box-sizing: border-box;
+  z-index: 0;
+  border-radius: 0 175px 175px 0;
+}
+
+.about .about-txt .about-txt-inner {
+	padding-left: 100px;
+	color: #1c1c1c;
+}
+
+.about-1 {
+	left: 0;
+	top: 0;
+
+}
+
+.about-1 .about-img {
+	background-image: url(../img/avatar.png);
+}
+
+.about-2 .about-img {
+  background-image: url(../img/drupal.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.about-3 .about-img {
+	background-image: url(../img/books.png);
+	background-color: brown;
+}
+
+.about-4 .about-img {
+	background-image: url(../img/knowledge.jpg);
+}
+
+.about-5 .about-img {
+	background-image: url(../img/scrum-master.jpg);
+}
+
+.about-2 {
+	left: 450px;
+	top: 0;
+}
+
+.about-3 {
+	right: 0;
+	top: 0;
+}
+
+.about-4 {
+	top: 240px;
+	left: 216px;
+}
+
+.about-5 {
+	top: 240px;
+	left: 650px;
+}
+
+@keyframes hinge {
+
+
+  0%, 100% {
+    transform: rotate3d(0, 0, 1, 80deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+
+  50% {
+    transform: rotate3d(0, 0, 1, 60deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+  }
+}
+
+.hinge {
+  animation-duration: 2s;
+  animation-name: hinge;
+  animation-iteration-count: infinite;
+}
+
+span.hinge {
+	display: inline-block;
+  left: 40px;
+  top: 92px;
+  position: relative;
+}
+
+#lamp {
+	position: absolute;
+  width: 1000px;
+  height: auto;
+  top: -100px;
+  right: -250px;
+}
+
+#finish-him {
+  opacity: 1;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.why-container {
+	height: 600px;
+	position: relative !important;
+}
+
+.why-container p {
+	margin-bottom: 30px;
+}
+
+.why-img {
+	position: absolute !important;
+	right: 0;
+	top: -50px;
+	width: 128px;
+	height: 128px;
+}
+
+.why-img.reader {
+	background: url(../img/reader.png) no-repeat;
+}
+
+.why-img.tv {
+	background: url(../img/television.png) no-repeat;
+  right: 140px;
+  top: 110px;
+}
+
+.why-img.radio {
+	background: url(../img/radio.png) no-repeat;
+	top: 220px;
+}
+
+.why-icon {
+	position: absolute !important;
+	right: 0;
+	top: -50px;
+	width: 64px;
+	height: 64px;
+}
+
+.why-icon.fb {
+	background: url(../img/facebook.png) #FFF;
+  border-radius: 12px;
+  transform: rotate(12deg);
+  right: 50px;
+}
+
+.why-icon.tt {
+  background: url(../img/twitter.png);
+  transform: rotate(14deg);
+  right: 207px;
+  top: 24px;
+}
+
+.why-icon.it {
+  background: url(../img/instagram.png);
+  transform: rotate(-11deg);
+  right: 50px;
+  top: 70px;
+}
+
+.why-icon.wa {
+  background: url(../img/whatsapp.png);
+  transform: rotate(36deg);
+  right: 195px;
+  top: 130px;
+}
+
+.why-icon.pc {
+	background: url(../img/periscope.png);
+  transform: rotate(20deg);
+  right: 50px;
+  top: 182px;
+}
+
+.why-icon.pt {
+  background: url(../img/pinterest.png);
+  transform: rotate(-28deg);
+  right: 190px;
+  top: 233px;
+}
+
+.why-icon.yt {
+	background: url(../img/youtube.png);
+  transform: rotate(-14deg);
+  right: 50px;
+  top: 300px;
+}
+
+.why-container-2 .why-img {
+	right: unset;
+	top: unset;
+	bottom: 0;
+}
+
+.why-img.boy-1 {
+	background: url(../img/boy-1.png);
+	left: 45px;
+	bottom: 30px;
+	transform: rotate(16deg);
+}
+
+.why-img.boy-2 {
+	background: url(../img/boy-2.png);
+	left: 682px;
+	bottom: 16px;
+	transform: rotate(-12deg);
+}
+
+.why-img.girl-1 {
+	background: url(../img/girl-1.png);
+	left: 341px;
+	bottom: 86px;
+	transform: rotate(4deg);
+}
+
+.why-img.girl-2 {
+	background: url(../img/girl-2.png);
+	left: 986px;
+	bottom: 42px;
+	transform: rotate(-21deg);
+}
+
+.why-img.graph {
+	background: url(../img/graph.png);
+  bottom: 130px;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  left: 410px;
+}
+
+.how-container {
+	height: 600px;
+	position: relative !important;
+}
+
+.how {
+	box-sizing: border-box;
+	width: 300px;
+	height: 300px;
+	position: absolute !important;
+}
+
+.how p {
+	margin: 15px;
+	max-width: 100%;
+}
+
+.how-1 {
+  left: 100px;
+  background: rgb(32,178,170);
+  z-index: 2;
+}
+
+.how-2 {
+  left: 400px;
+  background: #4169e1;
+  z-index: 3;
+}
+
+.how-3 {
+  left: 700px;
+  background: rgb(205,92,92);
+  z-index: 4;
+}
+
+.how .t {
+	width: 100px;
+  height: 100px;
+  position: absolute !important;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  top: -70px;
+  left: 100px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  background: rgb(32,178,170);
+}
+
+.how .r {
+	width: 100px;
+  height: 100px;
+  position: absolute !important;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  top: 100px;
+  right: -70px;
+  background: rgb(32,178,170);
+}
+
+.how .b { 
+	width: 100px;
+  height: 100px;
+  position: absolute !important;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  bottom: -30px;
+  left: 100px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  background: rgb(0,191,255);
+}
+
+.how .l { 
+	width: 100px;
+  height: 100px;
+  position: absolute !important;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  top: 100px;
+  left: -30px;
+  background: rgb(0,191,255);
+}
+
+.how-2 .t, .how-2 .r {
+	background: #4169e1;
+}
+
+.how-3 .t, .how-3 .r {
+	background: rgb(205,92,92);
+}
+
+.how div {
+	position: absolute !important;
+  margin-left: 4px;
+  height: 200px;
+  overflow: hidden;
+  transform: rotate(24deg);
+  margin-top: 35px;
+  text-align: center;	
+  z-index: 5;
+}
+
+.how div.shy {
+	margin-left: 0;
+	transform: none;
+	margin-top: 8px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.how span {
+	z-index: 4;
+}
+
+.how-good {
+	position: absolute !important;
+	width: 200px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	font-size: 100px;
+	z-index: 2;
+}
+
+.how-good span + span {
+	position: absolute !important;
+	left: 0;
+	width: 200px;
+}
+
+.how-bad {
+	position: absolute !important;
+	width: 200px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	font-size: 100px;
+	z-index: 6;
+}
