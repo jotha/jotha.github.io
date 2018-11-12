@@ -833,14 +833,13 @@ span.hinge {
   display: inline-block;
   width: 100px;
   height: 100px;
-  top: 15px;
+  right: 15px;
+  bottom: 15px;
   margin-left: 30px;
-  background: url(../img/arrow.svg) no-repeat;
+  background: url(../img/mouse.svg) no-repeat;
   background-size: contain;
-  background-color: indianred;
   line-height: 128px;
   background-position: center;
-  border-radius: 50%;
 }
 
 @keyframes bounce {
