@@ -880,3 +880,13 @@ span.hinge {
   transform-origin: center bottom;
   animation-iteration-count: infinite;
 }
+
+@media (max-width: 1400px) {
+  #home .flex-container-inner,
+  #about,
+  #why,
+  #how,
+  #end {
+    transform: scale(0.8);
+  }
+}
