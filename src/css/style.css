@@ -827,3 +827,56 @@ span.hinge {
 	font-size: 100px;
 	z-index: 6;
 }
+
+#arrow {
+  position: absolute;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  top: 15px;
+  margin-left: 30px;
+  background: url(../img/arrow.svg) no-repeat;
+  background-size: contain;
+  background-color: indianred;
+  line-height: 128px;
+  background-position: center;
+  border-radius: 50%;
+}
+
+@keyframes bounce {
+  from {
+
+  }
+
+  20%,
+  53%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+.bounce {
+  animation-duration: 1.4s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  animation-name: bounce;
+  transform-origin: center bottom;
+  animation-iteration-count: infinite;
+}
