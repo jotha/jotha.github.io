@@ -21,12 +21,11 @@ function initMap() {
   });
 
   var bounds = new google.maps.LatLngBounds(
-      new google.maps.LatLng(40.344373, -3.772474),
-      new google.maps.LatLng(40.463025, -3.572474));
+      new google.maps.LatLng(-0.9782, 38.8122),
+      new google.maps.LatLng(-0.9576, 38.8041));
 
   // The photograph is courtesy of the U.S. Geological Survey.
-  var srcImage = 'https://developers.google.com/maps/documentation/' +
-      'javascript/examples/full/images/talkeetna.png';
+  var srcImage = '../images/1-1.jpg';
 
   // The custom USGSOverlay object contains the USGS image,
   // the bounds of the image, and a reference to the map.
