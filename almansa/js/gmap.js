@@ -16,7 +16,7 @@ USGSOverlay.prototype = new google.maps.OverlayView();
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 17,
-    center: {lat: 40.444373, lng: -3.672474},
+    center: {lat: -0.9782, lng: 38.8122},
     mapTypeId: 'satellite'
   });
 
@@ -51,7 +51,7 @@ function initMap() {
         map: map,
         title: "it's me!"
       });
-      map.setCenter(pos);
+      //map.setCenter(pos);
     }, function() {
       handleLocationError(true, infoWindow, map.getCenter());
     });
