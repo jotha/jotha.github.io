@@ -16,13 +16,13 @@ USGSOverlay.prototype = new google.maps.OverlayView();
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 17,
-    center: {lat: -0.9782, lng: 38.8122},
+    center: {lat: 38.8122, lng: -0.9782},
     mapTypeId: 'satellite'
   });
 
   var bounds = new google.maps.LatLngBounds(
-      new google.maps.LatLng(-0.9782, 38.8122),
-      new google.maps.LatLng(-0.9576, 38.8041));
+      new google.maps.LatLng(38.8122, -0.9782),
+      new google.maps.LatLng(38.8041, -0.9576));
 
   // The photograph is courtesy of the U.S. Geological Survey.
   var srcImage = 'https://jotha.github.io/almansa/images/1-1.jpg';
