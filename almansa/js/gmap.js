@@ -25,7 +25,7 @@ function initMap() {
       new google.maps.LatLng(38.8041, -0.9576));
 
   // The photograph is courtesy of the U.S. Geological Survey.
-  var srcImage = 'https://jotha.github.io/almansa/images/1-1.jpg';
+  var srcImage = 'https://jotha.github.io/almansa/images/1-1.png';
 
   // The custom USGSOverlay object contains the USGS image,
   // the bounds of the image, and a reference to the map.
